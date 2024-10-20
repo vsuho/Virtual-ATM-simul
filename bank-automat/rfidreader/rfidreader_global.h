@@ -1,0 +1,12 @@
+#ifndef RFIDREADER_GLOBAL_H
+#define RFIDREADER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(RFIDREADER_LIBRARY)
+#  define RFIDREADER_EXPORT Q_DECL_EXPORT
+#else
+#  define RFIDREADER_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // RFIDREADER_GLOBAL_H
